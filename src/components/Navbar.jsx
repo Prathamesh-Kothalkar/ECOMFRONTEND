@@ -3,12 +3,14 @@ import { Menu, Close, Search, ShoppingCart, ArrowDownward, ArrowUpward, ExpandMo
 import { Transition } from '@headlessui/react';
 import { Avatar } from '@mui/material';
 import Cart from './Cart'; 
+import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isSubNavOpen, setIsSubNavOpen] = useState(false);
     const [isCartOpen, setIsCartOpen] = useState(false); // State for Cart Sidebar
+    const navigate=useNavigate();
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -54,7 +56,7 @@ export default function Navbar() {
                                 </div>
                             )}
                         </div>
-                        <a href="/new" className="hover:text-gray-400 text-xl">NEW</a>
+                        <a onClick={()=>{navigate("/new");}} className="hover:text-gray-400 text-xl cursor-pointer">NEW</a>
                         <a href="#" className="hover:text-gray-400 text-xl">For Her</a>
                         <a href="#" className="hover:text-gray-400 text-xl">Best Seller</a>
                         <a href="#" className="hover:text-gray-400 text-xl">New Launch</a>
@@ -72,7 +74,7 @@ export default function Navbar() {
                                 <div className="absolute top-full right-0 mt-2 w-48 text-white rounded-md shadow-lg z-20 bg-black">
                                     <div className="grid grid-cols-1 p-2">
                                        <ul>
-                                        <li className=' bg-customDarker hover:bg-gray-800 text-white text-sm p-1 m-1'><a href="/login">New Customer Sign up</a></li>
+                                        <li className=' bg-customDarker hover:bg-gray-800 text-white text-sm p-1 m-1'><a onClick={()=>{navigate("/login");}}>New Customer Sign up</a></li>
                                         <li className='bg-customDarker hover:bg-gray-800 text-white p-1'><hr /></li>
                                         <li className='bg-customDarker hover:bg-gray-800 text-white p-1 m-1'><a href="/account">My Account</a></li>
                                         <li className='bg-customDarker hover:bg-gray-800 text-white p-1 m-1'>Wishlist</li>
@@ -103,7 +105,7 @@ export default function Navbar() {
                         </div>
                         <ul className="mt-8 space-y-6">
                             <li><a href="#" className="hover:text-gray-400">Products</a></li>
-                            <li><a href="/new" className="hover:text-gray-400">NEW</a></li>
+                            <li><a onClick={()=>{navigate("/new");setIsOpen(!isOpen)}} className="hover:text-gray-400">NEW</a></li>
                             <li><a href="#" className="hover:text-gray-400">For Her</a></li>
                             <li><a href="#" className="hover:text-gray-400">Best Seller</a></li>
                             <li><a href="#" className="hover:text-gray-400">New Launch</a></li>
@@ -115,7 +117,7 @@ export default function Navbar() {
                                 <ShoppingCart className="hover:text-gray-400 cursor-pointer" onClick={toggleCart} />
                                 <button className="hover:text-gray-400" onClick={()=>{toggleCart();toggleMenu()}}>Cart</button>
                             </li>
-                            <li><a href="/login" className="hover:text-gray-400">Login</a></li>
+                            <li><a onClick={()=>{navigate("/login");setIsOpen(!isOpen)}} className="hover:text-gray-400">Login</a></li>
                         </ul>
                     </div>
                 </Transition>
