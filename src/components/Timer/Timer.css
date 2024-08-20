@@ -9,7 +9,8 @@
     justify-content: center;
 }
 .h1{
-    color: rgba(118, 118, 118, 0.695);
+    color: white;
+    font-size: 40px;
 }
 .timerdesign{
     font-size: 50px;
