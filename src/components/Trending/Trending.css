@@ -17,11 +17,12 @@
     text-decoration-color: red;
     font-size: 30px;
     margin-left: 30px;
+    
 }
 .heading1{
     margin-left: 35px;
     font-size: 40px;
-    /* color: black; */
+    color: black;
 }
 .TrendingcardProduct{
     height: 300px;
