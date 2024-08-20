@@ -11,6 +11,7 @@ function Item({ id, name, image, new_price, old_price }) {
             src={image}
             alt={name}
             className="w-full h-[180px] object-cover rounded-md"
+            onClick={()=>window.scrollTo({top: 0, behavior: 'smooth'})}
           />
         </Link>
         <p className="my-2 font-bold">{name}</p>

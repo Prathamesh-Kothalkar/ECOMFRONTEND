@@ -24,7 +24,7 @@ function Product() {
             <img
               src={product.image}
               alt=""
-              className="w-24 lg:w-32 h-20 lg:h-32 rounded-lg"
+              className="w-24 lg:w-44 h-20 lg:h-40 rounded-lg"
             />
             <img
               src={product.image}
@@ -45,7 +45,7 @@ function Product() {
           </div>
           <div>
             <img
-              className="w-full lg:w-[500px] xl:w-[700px] lg:h-[600px] rounded-md"
+              className="w-full lg:w-[500px] xl:w-[850px] lg:h-[600px] rounded-md mx-5"
               src={product.image}
               alt=""
             />

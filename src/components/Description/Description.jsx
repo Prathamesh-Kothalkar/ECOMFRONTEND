@@ -2,7 +2,7 @@ import React from "react";
 
 function Description() {
   return (
-    <div className="p-4 lg:p-8 bg-gray-50 rounded-lg m-8">
+    <div className="p-4 lg:p-8 bg-gray-50 rounded-lg mx-8 lg:mx-40 my-8">
       <h3 className="text-2xl font-bold mb-4 text-gray-800">Description:</h3>
       <div className="text-base lg:text-lg leading-relaxed text-gray-700">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum beatae
