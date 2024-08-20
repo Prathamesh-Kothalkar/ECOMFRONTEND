@@ -66,7 +66,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 pt-8 mt-8 text-center">
           <p className="text-sm text-gray-500">
-            &copy; 2024 Shopverse. All rights reserved.
+            &copy; 2024 Arevei. All rights reserved. <i>This Product Under Designed by Arevei.in</i>
           </p>
         </div>
       </div>
