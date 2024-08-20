@@ -11,14 +11,14 @@
 .Title{
     color: rgb(84, 84, 84);
 }
-h3{
+.heading3{
     color: black;
     text-decoration: line-through;
     text-decoration-color: red;
     font-size: 30px;
     margin-left: 30px;
 }
-h1{
+.heading1{
     margin-left: 35px;
     font-size: 40px;
     /* color: black; */
@@ -30,6 +30,7 @@ h1{
 }
 .TrendingcardProduct img{
     height: 200px;
+    max-width: fit-content;
     /* width: 100%; */
 }
 .buy{
