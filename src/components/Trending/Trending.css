@@ -1,0 +1,43 @@
+.TrendingContainer{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #191919;
+}
+.Title{
+    color: rgb(84, 84, 84);
+}
+h3{
+    color: black;
+    text-decoration: line-through;
+    text-decoration-color: red;
+    font-size: 30px;
+    margin-left: 30px;
+}
+h1{
+    margin-left: 35px;
+    font-size: 40px;
+    /* color: black; */
+}
+.TrendingcardProduct{
+    height: 300px;
+    background-color: grey;
+    margin-left: 20px;
+}
+.TrendingcardProduct img{
+    height: 200px;
+    /* width: 100%; */
+}
+.buy{
+    background-color: red;
+    padding: 5px 5px 5px 5px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: -80px;
+    left: 120px;
+}

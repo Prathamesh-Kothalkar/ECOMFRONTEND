@@ -1,0 +1,23 @@
+.productContainer{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #191919;
+}
+.cardProduct img{
+    height: 250px;
+    margin-left: 20px;
+}
+.buy{
+    background-color: red;
+    padding: 5px 5px 5px 5px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: -80px;
+    left: 120px;
+}
