@@ -10,6 +10,7 @@
 }
 .cardProduct img{
     height: 250px;
+    max-width: fit-content;
     margin-left: 20px;
 }
 .buy{
