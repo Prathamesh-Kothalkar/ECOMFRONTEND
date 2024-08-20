@@ -11,6 +11,8 @@ export default function Trending(){
                 <div className="TrendingcardProduct"><img src="https://i.ibb.co/yq9Ggrw/Product1.png" alt="Product1" /><h3 className='heading3'>₹ 993</h3><h1 className='heading1'>₹ 992</h1></div>
                 <div className="TrendingcardProduct"><img src="https://i.ibb.co/Cb64F88/Product4.png" alt="Product4" /><h3 className='heading3'>₹ 993</h3><h1 className='heading1'>₹ 992</h1></div>
             </div>
+            <br></br>
+            <br></br>
         </>
     )
 }
