@@ -9,7 +9,7 @@
     background-color: #191919;
 }
 .Title{
-    color: rgb(84, 84, 84);
+    color: rgb(84, 84, 84) !important;
 }
 .heading3{
     color: black;
