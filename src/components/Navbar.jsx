@@ -4,7 +4,7 @@ import { Transition } from '@headlessui/react';
 import { Avatar } from '@mui/material';
 import Cart from './Cart'; 
 import { useNavigate } from 'react-router-dom';
-
+import logo from "../assets/clogo.jpeg"
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -28,10 +28,11 @@ export default function Navbar() {
         <>
             <header className="bg-customDarker text-white">
                 <nav className="flex justify-between items-center p-4 max-w-7xl mx-auto">
-                    <div className="text-2xl font-bold">
-                    <img src="https://beardo.in/cdn/shop/files/beardo_logo_white_png_1.png?v=1679998281&width=500"
+                    <div className="cursor-pointer">
+                    <img src={logo}
                             alt="Login Banner"
-                            className="object-contain h-10 w-40"
+                            className="object-fit h-18 w-20 rounded-sm shadow-sm shadow-slate-400 hover:shadow-yellow-400 transition-all "
+                            onClick={()=>navigate("/")}
                         />
                     </div>
 
