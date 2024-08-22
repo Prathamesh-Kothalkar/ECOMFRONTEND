@@ -77,7 +77,7 @@ export default function Navbar() {
                                        <ul>
                                         <li className=' bg-customDarker hover:bg-gray-800 text-white text-sm p-1 m-1'><a onClick={()=>{navigate("/login");}}>New Customer Sign up</a></li>
                                         <li className='bg-customDarker hover:bg-gray-800 text-white p-1'><hr /></li>
-                                        <li className='bg-customDarker hover:bg-gray-800 text-white p-1 m-1'><a href="/account">My Account</a></li>
+                                        <li className='bg-customDarker hover:bg-gray-800 text-white p-1 m-1'><a onClick={()=>{navigate("/account");}}>My Account</a></li>
                                         <li className='bg-customDarker hover:bg-gray-800 text-white p-1 m-1'>Wishlist</li>
                                        </ul>
                                     </div>
